@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item
+    android:id="@+id/itPerfil"
+    android:icon="@drawable/perfil_24"
+    android:title="Perfil" />
+<item
+    android:id="@+id/itCategorias"
+    android:icon="@drawable/categorias_24"
+    android:title="Categorias" />
+<item
+    android:id="@+id/itTutorias"
+    android:icon="@drawable/calendar_24"
+    android:title="Tutorias" />
+</menu>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Aplicacion Find A Tutor EC</string>
+    <string name="error">Email incorrecto</string>
+    <string name="error1">Contraseña incorrecto</string>
+
+
+</resources>
