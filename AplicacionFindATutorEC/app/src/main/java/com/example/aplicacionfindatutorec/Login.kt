@@ -8,6 +8,7 @@ import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import com.example.aplicacionfindatutorec.databinding.ActivityLoginBinding
 import com.google.android.material.textfield.TextInputLayout
 
@@ -20,11 +21,14 @@ class Login : AppCompatActivity() {
         setContentView(binding.root)
         var parentLogin = binding.loginPrincipal
 
-        var btnLogin = findViewById<Button>(R.id.btnLogin)
-        var txtEmail=findViewById<EditText>(R.id.txtLogin)
-        var txtPassword=findViewById<EditText>(R.id.txtPassword)
-        var emailField =findViewById<TextInputLayout>(R.id.emailField)
-        var passwordField=findViewById<TextInputLayout>(R.id.passwordField)
+        parentLogin.setOnClickListener(){
+            hideSoftKeyboard(binding.root)
+        }
+
+        binding.btnRegistrarse.setOnClickListener(){
+            Toast.makeText(this,"Pantalla en construccion",Toast.LENGTH_SHORT).show()
+        }
+
 
         binding.btnLogin.setOnClickListener(){
             if (binding.txtLogin.text.toString().trim()=="")
